@@ -107,3 +107,17 @@ Finder > 찾기를 통해 mac내에 있는 모든 mysql을 삭제한다.
 \>> 난 yes했다. 권한변경한건없지만 혹시 모르니
 
 [##_Image|kage@b7S4VP/btsi4cirAp3/dnWTkjzpO9tHKbSHeegL41/img.png|CDM|1.3|{"originWidth":1526,"originHeight":124,"style":"alignCenter"}_##]
+
+
+\--------------------------------------
+
+6/9 내용추가
+
+사용자 등록방법
+
+1. mysql -u root -p 입력 후 비밀번호 입력
+2. show databases; 로 현재 db목록 보기
+3. 사용할 db로  use 사용할db명; 적기.
+4. CREATE USER '사용자명'@'%' IDENTIFIED BY '비밀번호'; 로 사용자 계정 만들기
+5. grant all privileges on 권한부여할 db명.* to '사용자명'@'%'; 로 권한부여하기.
+
