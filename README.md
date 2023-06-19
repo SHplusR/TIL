@@ -11,6 +11,7 @@ Today I Learned
 ### spring
 * [Spring Bean, DI, @Autowired, IOC, AOP,](https://alotofsim.tistory.com/18)
 * [IOC Container, PSA, Proxy](https://alotofsim.tistory.com/19)
+* [@RequestMapping, @Builder](https://alotofsim.tistory.com/22)
 
 
 ### mysql
