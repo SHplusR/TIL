@@ -17,3 +17,4 @@ Today I Learned
 
 ### mysql
 * [mac에 mysql 설치](https://alotofsim.tistory.com/20)
+* [mysql mariadb 10.4이상에서 root 비밀번호 분실 ](https://alotofsim.tistory.com/24)
