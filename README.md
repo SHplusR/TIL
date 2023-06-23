@@ -21,3 +21,4 @@ Today I Learned
 
 ### JPA
 * [H2 db 설치하기](https://alotofsim.tistory.com/25)
+* [영속성](https://alotofsim.tistory.com/26)
