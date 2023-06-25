@@ -13,7 +13,7 @@ Today I Learned
 * [IOC Container, PSA, Proxy](https://alotofsim.tistory.com/19)
 * [@RequestMapping, @Builder](https://alotofsim.tistory.com/22)
 * [@ManyToOne, @OneToMany..](https://alotofsim.tistory.com/23)
-
+* [ResponseEntity](https://alotofsim.tistory.com/27)
 
 ### mysql
 * [mac에 mysql 설치](https://alotofsim.tistory.com/20)
