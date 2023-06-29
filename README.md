@@ -23,3 +23,7 @@ Today I Learned
 * [H2 db 설치하기](https://alotofsim.tistory.com/25)
 * [영속성](https://alotofsim.tistory.com/26)
 * [엔티티 매핑](https://alotofsim.tistory.com/28)
+
+
+### 백준
+* [절대오차와 상대오차](https://alotofsim.tistory.com/29)
