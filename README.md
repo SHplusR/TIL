@@ -27,3 +27,6 @@ Today I Learned
 
 ### 백준
 * [절대오차와 상대오차](https://alotofsim.tistory.com/29)
+
+### 너의 말이 보여 네 약점 알고리즘
+* [DFS&BFS](https://alotofsim.tistory.com/30)
