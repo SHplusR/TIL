@@ -30,3 +30,4 @@ Today I Learned
 
 ### 너의 말이 보여 네 약점 알고리즘
 * [DFS&BFS](https://alotofsim.tistory.com/30)
+* [시간복잡도](https://alotofsim.tistory.com/31)
