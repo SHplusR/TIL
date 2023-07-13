@@ -51,3 +51,66 @@ BFS (Breadth - First Search)
 우선 큐에 1 을 넣는다. 큐는 선입선출이기 때문에 1을 꺼내면서 방문기준에 따라 2-> 3-> 8을 넣는다. 이후 큐의 선입선출 규칙에 따라 
 
 차례대로 2에 관련된 노드(큐에 7을 넣음), 3에 관련된 노드(큐에 4,5넣음), 8에 관련된 노드(없으니 지나감), 7에 관련된 노드( 큐에 6을 넣음) 를 큐에 넣고 큐에 빼는 방법을 방법하면 큐에서 나온 순서대로 출력하면 노드 방문 경로가 된다.
+
+* 백준 2606
+import java.io.*;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+    static int n;
+    static int line;
+    static int[][] arr;
+    static boolean[] check;
+    static StringBuilder sb;
+
+    static int count;
+    static Queue<Integer> queue;
+
+    public static void main(String[] args) throws IOException  {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        n = Integer.valueOf(br.readLine()); //7
+        check = new boolean[n+1];
+        line = Integer.valueOf(br.readLine()); //6
+        arr = new int[line][2];
+        sb = new StringBuilder();
+        count = 0;
+        Arrays.fill(check,false);
+        queue = new LinkedList<>();
+        for(int i =0; i<line; i++){
+            String[] strings = br.readLine().split(" ");
+             arr[i][0] = Integer.valueOf(strings[0]);
+             arr[i][1] = Integer.valueOf(strings[1]);
+        }
+        bfs(1);
+        System.out.println(sb);
+    }
+    public static void bfs(int v){
+        queue.offer(v);
+        check[v] = true;
+        while(!queue.isEmpty()){
+            int start = queue.poll();
+            count++;
+            for(int i =0; i<line; i++){
+                if((arr[i][1] == start && !check[arr[i][0]]) || (arr[i][0] == start && !check[arr[i][1]])){
+                    if(arr[i][1] == start){
+                        queue.offer(arr[i][0]);
+                        check[arr[i][0]] = true;
+                    }
+                    else{
+                        queue.offer(arr[i][1]);
+                        check[arr[i][1]] = true;
+                    }
+                }
+            };
+        }
+        sb.append(count-1);
+    }
+}
+
+아래와 같은 코드를 작성했는데, 흠..더 좋은 방법이 있을것같아 찾아보았다.
+
+public static Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+
+난   static int[][] arr; 로 만들어 진행했는데 위와같이 map을 사용하는데 이떄 arraylist를 mapped value로도 사용이 되더라....
